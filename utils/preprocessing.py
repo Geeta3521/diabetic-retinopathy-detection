@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import tensorflow as tf
+from tensorflow.keras.applications.efficientnet import preprocess_input
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from config import TRAIN_DIR, TEST_DIR, IMAGE_SIZE, BATCH_SIZE, RANDOM_SEED
 
@@ -114,8 +115,7 @@ def get_data_generators():
                 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
                 img = cv2.resize(img, IMAGE_SIZE)
 
-                img = img.astype(np.float32) / 255.0
-
+                img = preprocess_input(img.astype(np.float32))  
                 label_vec = np.zeros(num_classes, dtype=np.float32)
                 label_vec[class_indices[self.labels[i]]] = 1.0
 
@@ -169,8 +169,7 @@ def preprocess_pil_image(pil_img):
 
     img = cv2.resize(img, IMAGE_SIZE)
 
-    img = img.astype(np.float32) / 255.0
-
+    img = preprocess_input(img.astype(np.float32))
     img = np.expand_dims(img, axis=0)
 
     return img

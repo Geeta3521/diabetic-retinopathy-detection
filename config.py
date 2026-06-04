@@ -56,8 +56,8 @@ INPUT_SHAPE     = (224, 224, 3)
 
 # ─── Training Hyperparameters ─────────────────────────────────────────────────
 BATCH_SIZE      = 32
-EPOCHS_FROZEN   = 10     # Phase 1: train head only (frozen base)
-EPOCHS_FINETUNE = 20     # Phase 2: fine-tune top layers
+EPOCHS_FROZEN   = 3     # Phase 1: train head only (frozen base)
+EPOCHS_FINETUNE = 3   # Phase 2: fine-tune top layers
 LEARNING_RATE   = 1e-3
 FINETUNE_LR     = 1e-5
 VALIDATION_SPLIT = 0.2

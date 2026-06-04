@@ -65,7 +65,7 @@ def build_model(num_classes: int = 4, trainable_base: bool = False) -> Model:
 
     # EfficientNetB0 expects uint8 or [0,255] input — we've already normalized
     # so set include_preprocessing=False behaviour via direct call
-    x = base_model(inputs, training=False)
+    x = base_model(inputs)
 
     # Classification head
     x = layers.GlobalAveragePooling2D(name="gap")(x)

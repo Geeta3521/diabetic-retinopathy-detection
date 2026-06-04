@@ -248,3 +248,11 @@ This system is for **educational and research purposes only**. It is NOT intende
 3. Acharya, U. R., et al. (2018). Automated diabetic macular edema detection using deep learning. IEEE.
 4. APTOS 2019 Blindness Detection — Kaggle Competition.
 5. Zuiderveld, K. (1994). Contrast Limited Adaptive Histogram Equalization. Graphics Gems IV.
+
+## 👩‍💻 Author
+
+Geeta Ajit Nemgounder
+
+BE in Artificial Intelligence & Machine Learning
+
+GitHub: https://github.com/Geeta3521
