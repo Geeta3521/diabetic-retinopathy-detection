@@ -99,8 +99,7 @@ eye_disease_detection/
 
 ### 1. Clone / Download the Project
 ```bash
-git clone https://github.com/yourusername/eye-disease-detection.git
-cd eye_disease_detection
+git clone https://github.com/Geeta3521/diabetic-retinopathy-detection.gitcd eye_disease_detection
 ```
 
 ### 2. Install Dependencies
