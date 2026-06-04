@@ -1,0 +1,16 @@
+EYE DISEASE DETECTION — EVALUATION REPORT
+============================================================
+
+loss: 1.4857
+compile_metrics: 0.2837
+
+                      precision    recall  f1-score   support
+
+            cataract       0.28      1.00      0.44       120
+diabetic_retinopathy       0.00      0.00      0.00        95
+            glaucoma       0.00      0.00      0.00       108
+              normal       0.00      0.00      0.00       100
+
+            accuracy                           0.28       423
+           macro avg       0.07      0.25      0.11       423
+        weighted avg       0.08      0.28      0.13       423
